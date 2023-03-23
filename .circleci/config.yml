@@ -2,10 +2,10 @@ version: 2
 jobs:
   one:
     docker:
-      - image: 
+      - image: cimg/ruby:2.6.8
         auth:
-         username: pitu1422
-         password:  Teju@1422
+         username: mydockerhub-user
+         password:  $DOCKERHUB_PASSWORD
          
      steps:
        - checkout
@@ -13,10 +13,10 @@ jobs:
        - run: sleep 25
    two:
      docker:
-       - image: 
+       - image: cimg/ruby:3.0.2
          auth:
-           username: pitu1422
-           password: Teju@1422
+           username: mydockerhub-user
+           password: $DOCKERHUB_PASSWORD
      steps:
         - checkout
         - run: echo "A more familiar hi"
