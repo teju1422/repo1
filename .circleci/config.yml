@@ -2,7 +2,7 @@ version: 2
 jobs:
   one:
     docker:
-      - image: firsttry
+      - image: 
         auth:
          username: pitu1422
          password:  Teju@1422
@@ -13,7 +13,7 @@ jobs:
        - run: sleep 25
    two:
      docker:
-       - image: firsttry
+       - image: 
          auth:
            username: pitu1422
            password: Teju@1422
